@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹窗示例</title>
+    <style>
+        /* 弹窗样式 */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        
+        /* 关闭按钮样式 */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #aaa;
+            cursor: pointer;
+        }
+        /* 响应式布局 */
+        @media screen and (max-width: 600px) {
+            /* 弹窗样式调整 */
+            .popup {
+                width: 90%;
+                max-width: none;
+            }
+			p {
+			  text-align: left;
+			}
+        }
+    </style>
+</head>
+<body>
+    <h2>欢迎来到KEMIWEB简化版</h2>
+    <button onclick="showPopup()">加入Q群</button> 你需要尽快加入Q群来获取大版本更新！
+    <div id="popup" class="popup">
+        <h2>请加入Q群以获取大版本更新</h2>
+        <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.hBkPlXza6X9ZFvwMvFYTxAHaHf?pid=ImgDet&rs=1" alt="示例图片" width="200">
+        <p>由于KEMIWEB服务调整，你需要扫码加入Q群来获取更新！（2023.3.21）</p>
+        <button class="close-btn" onclick="closePopup()">关闭</button>
+    </div>
+	<hr />
+	<br />
+    <button onclick="window.location.href='https://www.example.com'">跳转网页</button>
+    <script>
+        // 显示弹窗
+        function showPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+        
+        // 关闭弹窗
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>
