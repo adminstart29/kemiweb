@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>科米新闻网</title>
+    <style>
+        body {
+            background-color: #E6E6FA;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .left {
+            width: 220px;
+            margin-right: 20px;
+            padding: 20px;
+            background-color: #9370DB;
+            border-radius: 10px;
+            color: #fff;
+        }
+        .left button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            color: #7c4dff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .left button:hover {
+            background-color: #7c4dff;
+            color: #fff;
+        }
+        .right {
+            width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        .message {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .message img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        .message p {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+            max-width: 400px;
+        }
+        .message.user p {
+            background-color: #7c4dff;
+            color: #fff;
+        }
+        .right input[type="text"] {
+            width: 500px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .right button {
+            padding: 10px;
+            background-color: #7c4dff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .right button:hover {
+            background-color: #fff;
+            color: #7c4dff;
+        }
+		h3 {
+		  text-align: center;
+		  color: white;
+		}
+		
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+			<h3>科米新闻网-KSN</h3>
+            <button>多方面测试</button>
+            <button>讯飞星火</button>
+            <button>通义千问</button>
+			<button>科米百答</button>
+			<hr />
+			<div class="detail-change">
+			<div id="he-plugin-standard"></div>
+			</div>
+			<hr />
+			<p>发现:</p>
+			<p>想使用文心一言进行更精确的提问？现在给你一个逆向使用文心一言的机会，发送问题到邮箱：<br />
+			<br />
+			“kemiweb@hotmail.com”<br />
+			<br />
+			让我们来帮你询问并向你返回问题，我们已获得文心一言对话资格，但暂无接入文心一言方法。在本站直接使用文心一言对话还需要等待等待......</p>
+			<hr />
+        </div>
+        <div class="right">
+            <div class="message user">
+                <img src="user.png">
+                <p>你好！</p>
+            </div>
+            <div class="message robot">
+                <img src="robot.png">
+                <p>我是百度公司开发的人工智能语言模型，我的中文名是文心一言，英文名是ERNIE Bot，我可以完成的任务包括知识问答，文本创作，知识推理，数学计算，代码理解与编写，作画，翻译等。</p>
+            </div>
+            <div class="message user">
+                <img src="user.png">
+                <p>你还会什么？</p>
+            </div>
+            <div class="message robot">
+                <img src="robot.png">
+                <p>我还也可以陪伴您聊天、分享笑话、讲故事等等。作为一种人工智能程序，我不仅可以帮助您解决问题，也可以给您带来一些娱乐和轻松的时光。任何情况下，如果有我可以帮助您的需求，您都可以随时向我提问。</p>
+            </div>
+            <div class="message user">
+                <img src="user.png">
+                <p>鲁迅和周树人分别是谁？</p>
+            </div>
+            <div class="message robot">
+                <img src="robot.png">
+                <p>鲁迅（1881年9月25日-1936年10月19日），原名周树人，字豫山，浙江绍兴人，中国现代著名文学家、思想家、革命家、民主战士、文化名人。周树人（1895年1月25日-1971年6月3日），字槐聚，浙江绍兴人，中国现代著名文学家、翻译家、散文家、教育家、文化名人。</p>
+            </div>
+            <div class="message user">
+                <img src="user.png">
+                <p>画一幅画，内容是：蘑菇 小木屋、小乔、鲜花、虚幻、普通、粘土。</p>
+            </div>
+			<div class="message robot">
+			    <img src="robot.png">
+			    <p><img src="yiyan.jpg" alt="文心一言绘图">好的，根据你的需求，我为你创作了一幅画作。我的作画技能还在不断进化中，暂时还不支持对画作的修改和解释。如果需要继续让我为你作画，请完整描述你的需求，如：“帮我画一枝晶莹剔透的牡丹花”。</p>
+			</div>
+			<div class="message user">
+			    <img src="user.png">
+			    <p>HTML写一个html代码编辑器，界面上有一个输入框，用户输入代码后点击按钮，关闭输入并运行代码。按钮可以将展示框和输入框来回切换，做成响应式布局，适配手机。</p>
+			</div>
+			<div class="message robot">
+			    <img src="robot.png">
+			    <p>抱歉，我暂时不能为你写出完整的代码，但是我可以给你一些思路。1.创建一个 HTML 文件，包含一个输入框和一个按钮，以及一个展示框。2.使用 CSS 样式来设计输入框、按钮和展示框的样式，使其看起来像一个编辑器。3.使用 JavaScript 来监听按钮的点击事件，并在用户点击按钮时执行以下操作：+获取输入框中的代码。+将代码插入到展示框中。+隐藏输入框，显示展示框。4.使用 JavaScript 来监听展示框的点击事件，并在用户点击展示框时执行以下操作：+隐藏展示框，显示输入框。+清空展示框中的内容。5.使用 JavaScript 和 CSS 媒体查询来使编辑器适应不同的屏幕尺寸。在小屏幕上，可以只显示输入框和按钮，而将展示框放在一个下拉菜单中。</p>
+			</div>
+			<div class="message user">
+			    <img src="user.png">
+			    <p>请帮我写美食文案，关于雪顶咖啡。</p>
+			</div>
+			<div class="message robot">
+			    <img src="robot.png">
+			    <p>雪顶咖啡，这是一道让人难以忘怀的美食。这道咖啡的特色在于它的独特口感和美丽的外观。当你品尝第一口时，你会被它的浓郁咖啡味道所吸引，同时还能感受到奶油的细腻口感。这道咖啡的配方非常简单，只需要浓缩咖啡和奶油即可。但是，它的制作过程需要一定的技巧和经验。咖啡师需要将奶油打得细腻，并将其与浓缩咖啡混合。最后，将混合物倒入杯中，并在顶部放上一颗可爱的冰淇淋球。这道美食不仅口感绝佳，而且外观也非常漂亮。当你在享受这道美食时，你会发现冰淇淋球就像一颗闪闪发光的小宝石，点缀在咖啡的顶部。整道菜品散发出一种温暖的气息，让你感受到无限的温馨和舒适。总之，雪顶咖啡是一道不容错过的美食。无论是在寒冷的冬季还是炎热的夏季，它都能带给你绝佳的味觉享受和视觉体验。</p>
+			</div>
+            <form>
+                <input type="text" placeholder="请输入您的问题...">
+                <button type="submit" onclick="alert('KEMIWEB：发送失败，文心一言暂时收不到你的消息。请前往邮件APP发送消息给：kemiweb@hotmail.com 。')">发送</button>
+            </form>
+        </div>
+    </div>
+	<script>
+		//天气模块
+	WIDGET = {
+	"CONFIG": {
+	"layout": "2",
+	"width": "220",
+	"height": "300",
+	"background": "1",
+	"dataColor": "FFFFFF",
+	"language": "zh",
+	"key": "7b0e4a94605c4a7ca0d4949c6bda40c4"
+	    }
+	}
+	</script>
+	<script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
+</body>
+</html>
